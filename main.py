@@ -56,7 +56,8 @@ def what_weather(city):
     url = f'http://wttr.in/{city}'
     weather_parameters = {
         'format': 2,
-        'M': ''
+        'M': '',
+        'T': ''
     }
     try:
         response = requests.get(url, params=weather_parameters)
