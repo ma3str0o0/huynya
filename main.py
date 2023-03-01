@@ -1,6 +1,7 @@
 import datetime as dt
 import requests
 
+
 DATABASE = {
     'Сергей': 'Омск',
     'Соня': 'Москва',
@@ -13,6 +14,7 @@ DATABASE = {
     'Артём': 'Владивосток',
     'Петя': 'Михайловка'
 }
+
 
 UTC_OFFSET = {
     'Москва': 3,
@@ -100,7 +102,7 @@ def process_friend(name, query):
         else:
             return '<неизвестный запрос>'
     else:
-        return f'У тебя нет друга по имени {name}'
+        return f'У тебя нет друзей'
 
 
 def process_query(query):
